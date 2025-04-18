@@ -41,14 +41,14 @@ To build a standalone Windows `.exe`:
 
 2. Run PyInstaller (from your project root):
 
-   ```bash
+```bash
   pyinstaller \
     --onefile               \  # single executable
     --windowed              \  # no console window
     --name chronolist       \  # executable name
     --icon assets/logo.ico  \  # path to your .ico file
     src/main.py
-   ```
+```
 
 3. Find the executable in the `dist/` folder (e.g. `chronolist.exe`). Copy this to any Windows machine.
 
