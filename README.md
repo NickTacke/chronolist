@@ -41,14 +41,9 @@ To build a standalone Windows `.exe`:
 
 2. Run PyInstaller (from your project root):
 
-```bash
-  pyinstaller \
-    --onefile               \  # single executable
-    --windowed              \  # no console window
-    --name chronolist       \  # executable name
-    --icon assets/logo.ico  \  # path to your .ico file
-    src/main.py
-```
+   ```bash
+   pyinstaller --onefile --windowed --name chronolist --icon assets/logo.png src/main.py
+   ```
 
 3. Find the executable in the `dist/` folder (e.g. `chronolist.exe`). Copy this to any Windows machine.
 
@@ -56,7 +51,6 @@ To build a standalone Windows `.exe`:
 
 Place your custom application icons in the `assets/` directory:
 - `assets/logo.png` – used for the window icon during runtime
-- `assets/logo.ico` – used for the packaged executable
 
 ## MVP Features
 
